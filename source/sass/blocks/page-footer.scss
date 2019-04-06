@@ -1,0 +1,8 @@
+.page-footer {
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.page-footer__copyright {
+  @include font-param(14px, 18px);
+  color: #283645;
+}
