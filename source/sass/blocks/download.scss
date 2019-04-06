@@ -1,0 +1,20 @@
+.download {
+  background-color: #1d2631;
+  color: #fff;
+}
+.download__download-button {
+  display: block;
+  padding: 16px;
+
+  text-align: center;
+  @include font-param(18px, 18px);
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 25px;
+}
+.download__os {
+  @include list-clear;
+}
+.download__description{
+  @include font-param(14px, 24px);
+}

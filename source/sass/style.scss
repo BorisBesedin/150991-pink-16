@@ -1,0 +1,26 @@
+@import "mixin.scss";
+@import "blocks/page-header.scss";
+@import "blocks/download.scss";
+@import "blocks/features.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+

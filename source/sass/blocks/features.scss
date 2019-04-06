@@ -1,0 +1,17 @@
+.features {
+  color: #283645;
+  background: linear-gradient(175deg, #fff 0%, #fff 50%, #f2f2f2 50%, #f2f2f2 100%);
+}
+.features__list {
+  @include list-clear;
+}
+.features__description {
+  @include font-param(24px, 24px);
+}
+.features__title {
+  @include font-param(18px, 18px);
+}
+.features__text {
+  @include font-param(14px, 24px);
+}
+
