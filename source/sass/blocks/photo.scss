@@ -2,16 +2,6 @@
   background-color: #fff;
   color: #283645;
 }
-.photos__container {
-  padding-top: 35px;
-  padding-bottom: 85px;
-  background-color: #1d2631;
-}
-.photos__title {
-  @include font-param(24px, 24px);
-  color: #fff;
-  font-weight: normal;
-}
 .photos__descriprion {
   margin-top: 55px;
   margin-bottom: 55px;
