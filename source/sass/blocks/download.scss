@@ -1,8 +1,11 @@
 .download {
+  padding-top: 28px;
+  padding-bottom: 35px;
   background-color: #1d2631;
   color: #fff;
 }
 .download__download-button {
+  margin-bottom: 30px;
   display: block;
   padding: 16px;
 
@@ -16,5 +19,6 @@
   @include list-clear;
 }
 .download__description{
+  margin-top: 20px;
   @include font-param(14px, 24px);
 }
