@@ -2,27 +2,35 @@
   padding-top: 45px;
   padding-bottom: 350px;
   color: #283645;
-  background-color: #fff;
+  background-color: #ffffff;
 }
+
 .features__list {
   @include list-clear;
   padding-top: 85px;
-  background: linear-gradient(175deg, #fff 0%, #fff 10%, #f2f2f2 10%, #f2f2f2 100%);
+  background: linear-gradient(175deg, #ffffff 0%, #ffffff 10%, #f2f2f2 10%, #f2f2f2 100%);
 }
+
 .features__description {
   margin-top: 0;
   margin-bottom: 40px;
+
   @include font-param(24px, 24px);
 }
+
 .features__title {
   margin: 0;
+
   @include font-param(18px, 18px);
 }
+
 .features__text {
   margin-top: 20px;
   margin-bottom: 0;
+
   @include font-param(14px, 24px);
 }
+
 .features__item {
   margin-top: 40px;
 }

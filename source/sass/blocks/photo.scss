@@ -1,38 +1,50 @@
 .photos {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #283645;
 }
+
 .photos__descriprion {
   margin-top: 55px;
   margin-bottom: 55px;
+
   @include font-param(14px, 30px);
 }
+
 .photos__list {
   @include list-clear;
 }
+
 .photos__item {
   margin-bottom: 20px;
   padding-bottom: 25px;
   background-color: #f2f2f2;
 }
+
 .photos__text {
   margin-top: 10px;
   margin-bottom: 20px;
+
   @include font-param (14px, 24px);
 }
+
 .photos__author-info {
   margin-top: 25px;
+
   @include font-param(14px, 24px);
 }
+
 .photos__author-name {
   font-weight: bold;
 }
+
 .photos__upload-time {
   text-transform: uppercase;
   font-size: 12px;
 }
+
 .photos__like {
   margin: 0;
+
   @include font-param(12px, 24px);
   color: #d22856;
   text-transform: uppercase;

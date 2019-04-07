@@ -2,23 +2,27 @@
   padding-top: 28px;
   padding-bottom: 35px;
   background-color: #1d2631;
-  color: #fff;
+  color: #ffffff;
 }
+
 .download__download-button {
   margin-bottom: 30px;
   display: block;
   padding: 16px;
 
-  text-align: center;
   @include font-param(18px, 18px);
-  color: #fff;
-  border: 3px solid #fff;
+  text-align: center;
+  color: #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 25px;
 }
+
 .download__os {
   @include list-clear;
 }
-.download__description{
+
+.download__description {
   margin-top: 20px;
+
   @include font-param(14px, 24px);
 }
