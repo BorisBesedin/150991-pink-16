@@ -9,24 +9,6 @@
   margin-top: 110px;
 }
 
-.site-list__link {
-  display: block;
-  padding: 16px;
-
-  text-align: center;
-  background-color: #1c2530;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  @include font-param(18px, 32px);
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
-}
-
-.main-nav__list {
-  @include list-clear;
-}
-
 .page-header__container {
   padding-top: 35px;
   padding-bottom: 85px;
