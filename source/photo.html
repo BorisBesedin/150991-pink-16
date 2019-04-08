@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/150x100" class="page-header__logo-image" alt="Логотип">
+        <img src="img/logo-pink-white-mobile.svg" class="page-header__logo-image" alt="Логотип">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="contest.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="contest.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
       </nav>
+      <div class="page-header__container">
+        <h2 class="page-header__title">Фотографии пользователей</h2>
+      </div>
     </header>
     <main class="page-main">
       <section class="photos">
-        <h2 class="photos__title">Фотографии пользователей</h2>
         <p class="photos__descriprion">Взгляните на фотографии, которые выкладывают пользователи! <br>
         Видите, как не хватает ваших?</p>
         <ul class="photos__list">
           <li class="photos__item">
-            <a href="#" class="photos__link"><img class="photos__image" src="http://placehold.it/150x100" alt=""></a>
+            <a href="#" class="photos__link"><img class="photos__image" src="img/panorama-mobile@1x.jpg" alt=""></a>
             <div class="photos__author-info">
               <b class="photos__author-name">Анна</b>
               <span class="photos__upload-time">(5 минут назад)</span>
@@ -35,7 +38,7 @@
             <p class="photos__like">Нравится: <span class="photos__like-value">213</span></p>
           </li>
           <li class="photos__item">
-            <a href="#" class="photos__link"><img class="photos__image" src="http://placehold.it/150x100" alt=""></a>
+            <a href="#" class="photos__link"><img class="photos__image" src="img/photo-car-mobile@1x.jpg" alt=""></a>
             <div class="photos__author-info">
               <b class="photos__author-name">Левон</b>
               <span class="photos__upload-time">(5 часов назад)</span>
@@ -44,7 +47,7 @@
             <p class="photos__like">Нравится: <span class="photos__like-value">356</span></p>
           </li>
           <li class="photos__item">
-            <a href="#" class="photos__link"><img class="photos__image" src="http://placehold.it/150x100" alt=""></a>
+            <a href="#" class="photos__link"><img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" alt=""></a>
             <div class="photos__author-info">
               <b class="photos__author-name">Антон</b>
               <span class="photos__upload-time">(12 часов назад)</span>
@@ -53,7 +56,7 @@
             <p class="photos__like">Нравится: <span class="photos__like-value">666</span></p>
           </li>
           <li class="photos__item">
-            <a href="#" class="photos__link"><img class="photos__image" src="http://placehold.it/150x100" alt=""></a>
+            <a href="#" class="photos__link"><img class="photos__image" src="img/photo-window-mobile@1x.jpg" alt=""></a>
             <div class="photos__author-info">
               <b class="photos__author-name">Борис</b>
               <span class="photos__upload-time">(20 часов назад)</span>
@@ -62,7 +65,7 @@
             <p class="photos__like">Нравится: <span class="photos__like-value">215</span></p>
           </li>
           <li class="photos__item">
-            <a href="#" class="photos__link"><img class="photos__image" src="http://placehold.it/150x100" alt=""></a>
+            <a href="#" class="photos__link"><img class="photos__image" src="img/photo-fair-mobile@1x.jpg" alt=""></a>
             <div class="photos__author-info">
               <b class="photos__author-name">Сергей</b>
               <span class="photos__upload-time">(25 часов назад)</span>
@@ -71,7 +74,7 @@
             <p class="photos__like">Нравится: <span class="photos__like-value">4</span></p>
           </li>
           <li class="photos__item">
-            <a href="#" class="photos__link"><img class="photos__image" src="http://placehold.it/150x100" alt=""></a>
+            <a href="#" class="photos__link"><img class="photos__image" src="img/photo-pov-mobile@1x.jpg" alt=""></a>
             <div class="photos__author-info">
               <b class="photos__author-name">Максим</b>
               <span class="photos__upload-time">(40 часов назад)</span>
@@ -80,7 +83,7 @@
             <p class="photos__like">Нравится: <span class="photos__like-value">150</span></p>
           </li>
           <li class="photos__item">
-            <a href="#" class="photos__link"><img class="photos__image" src="http://placehold.it/150x100" alt=""></a>
+            <a href="#" class="photos__link"><img class="photos__image" src="img/photo-wing-mobile@1x.jpg" alt=""></a>
             <div class="photos__author-info">
               <b class="photos__author-name">Надежда</b>
               <span class="photos__upload-time">(45 часов назад)</span>
@@ -93,7 +96,7 @@
     </main>
     <footer class="page-footer">
       <a href="index.html" class="page-footer__logo">
-        <img src="http://placehold.it/150x100" class="page-footer__logo-image" alt="Логотип">
+        <img src="img/logo-pink-blue-mobile.svg" class="page-footer__logo-image" alt="Логотип">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

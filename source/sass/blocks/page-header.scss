@@ -1,0 +1,21 @@
+.page-header {
+  background-color: #1c2530;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.page-header__image {
+  margin-top: 110px;
+}
+
+.page-header__container {
+  padding-top: 35px;
+  padding-bottom: 85px;
+}
+
+.page-header__title {
+  @include font-param(24px, 24px);
+  color: #ffffff;
+  font-weight: normal;
+}
