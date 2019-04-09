@@ -23,6 +23,7 @@
 }
 
 @import "mixin.scss";
+@import "variables.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/download.scss";
@@ -32,6 +33,7 @@
 
 
 body {
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -47,4 +49,16 @@ a {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
 }

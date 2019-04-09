@@ -1,12 +1,7 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: #1c2530;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.page-header__image {
-  margin-top: 110px;
 }
 
 .page-header__container {
@@ -18,4 +13,11 @@
   @include font-param(24px, 24px);
   color: #ffffff;
   font-weight: normal;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

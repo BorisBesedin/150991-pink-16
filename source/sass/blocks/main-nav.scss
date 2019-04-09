@@ -1,8 +1,10 @@
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   @include list-clear;
 }
 
-.main-nav__list a {
+.main-nav__link {
   display: block;
   padding: 16px;
 
@@ -14,4 +16,13 @@
   @include font-param(18px, 32px);
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+  .main-nav__link {
+    background: transparent;
+  }
 }
