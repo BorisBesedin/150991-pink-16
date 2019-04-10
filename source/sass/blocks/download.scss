@@ -4,7 +4,7 @@
 
   background-color: #1d2631;
   color: #ffffff;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -31,7 +31,7 @@
 .download__image {
   height: 290px;
   width: 100%;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -62,7 +62,7 @@
   .download {
     padding-top: 180px;
 
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   .download__wrapper {
@@ -80,7 +80,7 @@
 
   .download__image {
     height: 550px;
-    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: bottom;
   }
 }
@@ -89,12 +89,16 @@
   .download {
     padding-top: 205px;
 
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   .download__image {
     height: 645px;
-    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: bottom;
+  }
+
+  .download__wrapper {
+    max-width: 940px;
   }
 }

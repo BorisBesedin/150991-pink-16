@@ -6,6 +6,7 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include wrapper-set;
 }
@@ -24,10 +25,18 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
+    max-width: 620px;
     flex-direction: row;
   }
 
   .social__list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    max-width: 940px;
     flex-direction: row;
   }
 }
