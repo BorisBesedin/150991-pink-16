@@ -103,7 +103,7 @@
 
 @media (min-width: $desktop-width) {
   .photos__wrapper {
-    min-width: 940px;
+    max-width: 940px;
   }
 
   .photos__list {
