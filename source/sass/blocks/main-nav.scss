@@ -1,6 +1,7 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
+
   @include list-clear;
 }
 
@@ -22,6 +23,7 @@
   .main-nav__list {
     flex-direction: row;
   }
+
   .main-nav__link {
     background: transparent;
   }
