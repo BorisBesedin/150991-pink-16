@@ -1,14 +1,30 @@
 .features {
   padding-top: 45px;
-  padding-bottom: 350px;
   color: #283645;
-  background-color: #ffffff;
+  background: linear-gradient(175deg, #ffffff 0%, #ffffff 25%, #f2f2f2 25%, #f2f2f2 100%);
+  text-align: center;
+}
+
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include wrapper-set;
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include list-clear;
   padding-top: 85px;
-  background: linear-gradient(175deg, #ffffff 0%, #ffffff 10%, #f2f2f2 10%, #f2f2f2 100%);
 }
 
 .features__description {
@@ -32,5 +48,100 @@
 }
 
 .features__item {
+  max-width: 280px;
   margin-top: 40px;
+}
+
+.features__image {
+  height: 280px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+
+.features__item-image {
+  display: none;
+}
+
+.research {
+  display: none;
+  background-color: #ffffff;
+}
+
+.research__wrapper {
+  display: flex;
+
+  @include wrapper-set;
+}
+
+.research__image {
+  width: 240px;
+  height: 275px;
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -40px;
+  text-align: center;
+}
+
+.research__timer {
+  display: block;
+  padding: 40px;
+  width: 90px;
+
+  font-size: 96px;
+  line-height: 90px;
+  color: #d22856;
+  border: 15px solid #d22856;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .features__container {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .features__wrapper,
+  .research__wrapper {
+    max-width: 620px;
+  }
+
+  .features__image {
+    height: 480px;
+    width: 265px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .research {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__image {
+    display: none;
+  }
+
+  .features__wrapper,
+  .research__wrapper {
+    max-width: 940px;
+  }
+
+  .features__list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .research {
+    background-color: #f2f2f2;
+  }
+
+  .features__item-image {
+    display: block;
+  }
 }

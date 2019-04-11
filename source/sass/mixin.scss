@@ -8,3 +8,8 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin wrapper-set() {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
