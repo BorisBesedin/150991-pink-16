@@ -57,7 +57,7 @@
             </g>
           </svg>
         </a>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
@@ -71,17 +71,19 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Пинк</h1>
       <section class="download">
-        <div class="download__wrapper">
+        <div class="download__image-wrapper">
           <h2 class="visually-hidden">Загрузка приложения</h2>
           <div class="download__image"></div>
-          <div class="download__container">
+        </div>
+        <div class="download__container">
+          <div class="download__wrapper">
             <h3 class="download__title">Взгляните
             на жизнь иначе!</h3>
             <a href="#" class="download__download-button" download>Скачать приложение</a>
             <ul class="download__os os-list">
-              <li class="os-list__item"><a href="https://www.apple.com" class="os-list__link">apple</a></li>
-              <li class="os-list__item"><a href="https://play.google.com/store" class="os-list__link">android</a></li>
-              <li class="os-list__item"><a href="https://www.microsoft.com/store/apps/windows" class="os-list__link">windows</a></li>
+              <li class="os-list__item"><a href="https://www.apple.com" class="os-list__link os-list__link--apple"><span class="visually-hidden">apple</span></a></li>
+              <li class="os-list__item"><a href="https://play.google.com/store" class="os-list__link os-list__link--android"><span class="visually-hidden">android</span></a></li>
+              <li class="os-list__item"><a href="https://www.microsoft.com/store/apps/windows" class="os-list__link os-list__link--windows"><span class="visually-hidden">windows</span></a></li>
             </ul>
             <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>

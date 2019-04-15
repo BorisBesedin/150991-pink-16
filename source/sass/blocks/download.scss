@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.download__wrapper {
+.download__image-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,6 +37,7 @@
 }
 
 .download__download-button {
+  margin-top: 30px;
   margin-bottom: 30px;
   display: block;
   padding: 16px;
@@ -46,20 +47,61 @@
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 25px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download__os {
+  display: flex;
+  justify-content: center;
+
   @include list-clear;
+}
+
+.os-list__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.os-list__link:not(:nth-child(3)) {
+  margin-right: 20px;
+}
+
+.os-list__link--apple {
+  background-image: url("../../img/logo-apple.svg");
+}
+
+.os-list__link--android {
+  background-image: url("../../img/logo-android.svg");
+}
+
+.os-list__link--windows {
+  background-image: url("../../img/logo-microsoft.svg");
 }
 
 .download__description {
   margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
 
   @include font-param(14px, 24px);
 }
 
 @media (min-width: $tablet-width) {
   .download {
+    display: flex;
+    flex-direction: row-reverse;
     padding-top: 180px;
     margin-top: -110px;
 
@@ -67,11 +109,25 @@
   }
 
   .download__wrapper {
-    flex-direction: row-reverse;
+    width: 300px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .download__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: -300px;
   }
 
   .download__title {
     display: block;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+
+    @include font-param(40px, 40px);
+    font-weight: normal;
   }
 
   .download__container {
@@ -83,6 +139,11 @@
     height: 550px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: bottom;
+  }
+
+  .download__download-button {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -99,7 +160,16 @@
     background-position: bottom;
   }
 
-  .download__wrapper {
-    max-width: 940px;
+  .download__title {
+    @include font-param(50px, 50px);
+  }
+
+  .download__download-button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .download__image-wrapper {
+    margin-left: 0;
   }
 }
