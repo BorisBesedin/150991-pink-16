@@ -7,7 +7,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 16px;
+  padding: 16px 0;
 
   text-align: center;
   background-color: #1c2530;
@@ -119,13 +119,20 @@
   }
 
   .main-nav__list {
+    width: 630px;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .main-nav__link {
+    padding: 12px 0;
     background: transparent;
     border: none;
 
     text-transform: none;
+  }
+
+  .main-nav__link--active {
+    box-shadow: 0 3px 0 0 #ffffff;
   }
 }

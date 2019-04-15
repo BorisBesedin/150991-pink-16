@@ -1,7 +1,7 @@
 .features {
   padding-top: 45px;
   color: #283645;
-  background: linear-gradient(175deg, #ffffff 0%, #ffffff 25%, #f2f2f2 25%, #f2f2f2 100%);
+  background: linear-gradient(175deg, #ffffff 0%, #ffffff 26%, #f2f2f2 26%, #f2f2f2 100%);
   text-align: center;
 }
 
@@ -24,7 +24,7 @@
   align-items: center;
 
   @include list-clear;
-  padding-top: 85px;
+  padding-top: 35px;
 }
 
 .features__description {
@@ -32,6 +32,7 @@
   margin-bottom: 40px;
 
   @include font-param(24px, 24px);
+  text-align: center;
 }
 
 .features__title {
@@ -48,7 +49,7 @@
 }
 
 .features__item {
-  max-width: 280px;
+  width: 280px;
   margin-top: 40px;
 }
 
@@ -74,16 +75,6 @@
   @include wrapper-set;
 }
 
-.research__image {
-  width: 240px;
-  height: 275px;
-  background-image: url("../img/icon-timer.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center -40px;
-  text-align: center;
-}
-
 .research__timer {
   display: block;
   padding: 40px;
@@ -98,14 +89,14 @@
 
 @media (min-width: $tablet-width) {
   .features__container {
+    margin-top: 40px;
     width: 100%;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  .features__wrapper,
-  .research__wrapper {
-    max-width: 620px;
+  .features__list {
+    width: 310px;
   }
 
   .features__image {
@@ -118,6 +109,41 @@
 
   .research {
     display: flex;
+  }
+
+  .research__link {
+    @include font-param(14px, 24px);
+    color: #d22856;
+    text-decoration: underline;
+  }
+
+  .research__image {
+    width: 240px;
+    height: 275px;
+    background-image: url("../img/timer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .research__wrapper {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .research__container {
+    width: 310px;
+  }
+
+  .research__title {
+    @include font-param(30px, 30px);
+  }
+
+  .features__description {
+    margin-bottom: 0;
+
+    @include font-param(40px, 40px);
   }
 }
 
@@ -141,7 +167,44 @@
     background-color: #f2f2f2;
   }
 
+  .research__container {
+    width: 570px;
+
+    text-align: left;
+  }
+
+  .research__link {
+    @include font-param(18px, 30px);
+  }
+
+  .research__wrapper {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    justify-content: space-between;
+  }
+
+  .research__text {
+    @include font-param(18px, 30px);
+  }
+
+  .research__image {
+    width: 300px;
+    height: 345px;
+  }
+
   .features__item-image {
     display: block;
+  }
+
+  .features__title {
+    margin-top: 55px;
+
+    @include font-param(30px, 30px);
+  }
+
+  .features__text {
+    margin-top: 30px;
+
+    @include font-param(18px, 30px);
   }
 }
