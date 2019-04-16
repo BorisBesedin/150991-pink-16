@@ -1,6 +1,6 @@
-@mixin font-param($font-size, $font-height) {
+@mixin font-param($font-size, $line-height) {
   font-size: $font-size;
-  font-height: $font-height;
+  line-height: $line-height;
 }
 
 @mixin list-clear() {
