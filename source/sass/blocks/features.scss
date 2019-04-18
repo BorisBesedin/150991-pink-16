@@ -211,16 +211,14 @@
   .research__text {
     padding-top: 20px;
     padding-bottom: 20px;
+
+    @include font-param(18px, 30px);
   }
 
   .research__wrapper {
     margin-top: 65px;
     margin-bottom: 65px;
     justify-content: space-between;
-  }
-
-  .research__text {
-    @include font-param(18px, 30px);
   }
 
   .research__image {

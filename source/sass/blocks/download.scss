@@ -178,14 +178,12 @@
   .download__download-button {
     margin-top: 55px;
     margin-bottom: 60px;
+
+    @include font-param(21px, 18px);
   }
 
   .download__image-wrapper {
     margin-left: 0;
-  }
-
-  .download__download-button {
-    @include font-param(21px, 18px);
   }
 
   .download__description {
