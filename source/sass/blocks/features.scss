@@ -67,6 +67,7 @@
 .research {
   display: none;
   background-color: #ffffff;
+  text-align: left;
 }
 
 .research__wrapper {
@@ -89,14 +90,16 @@
 
 @media (min-width: $tablet-width) {
   .features__container {
-    margin-top: 40px;
+    margin-top: 50px;
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-around;
   }
 
   .features__list {
+    margin-top: 8px;
     width: 310px;
+    text-align: left;
   }
 
   .features__image {
@@ -129,7 +132,7 @@
     margin-top: 60px;
     margin-bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .research__container {
@@ -137,19 +140,44 @@
   }
 
   .research__title {
+    margin-top: 45px;
+    margin-bottom: 0;
+
     @include font-param(30px, 30px);
   }
 
+  .research__text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @include font-param(14px, 24px);
+  }
+
   .features__description {
+    margin-top: 10px;
     margin-bottom: 0;
 
-    @include font-param(40px, 40px);
+    @include font-param(40px, 42px);
   }
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    padding-top: 70px;
+
+    background: linear-gradient(175deg, #ffffff 0%, #ffffff 29%, #f2f2f2 29%, #f2f2f2 100%);
+  }
+
   .features__image {
     display: none;
+  }
+
+  .features__container {
+    margin: 0;
+  }
+
+  .features__description {
+    @include font-param(50px, 55px);
   }
 
   .features__wrapper,
@@ -161,6 +189,8 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
+    text-align: center;
   }
 
   .research {
@@ -168,6 +198,7 @@
   }
 
   .research__container {
+    margin-top: 45px;
     width: 570px;
 
     text-align: left;
@@ -175,6 +206,11 @@
 
   .research__link {
     @include font-param(18px, 30px);
+  }
+
+  .research__text {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .research__wrapper {

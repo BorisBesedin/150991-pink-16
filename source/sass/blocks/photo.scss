@@ -35,7 +35,7 @@
   width: 140px;
   position: absolute;
   top: 0;
-  right: 40px;
+  right: 20px;
   text-align: center;
 
   background-color: #d22856;
@@ -67,8 +67,8 @@
 }
 
 .photos__descriprion {
-  margin-top: 55px;
-  margin-bottom: 55px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 
   @include font-param(14px, 30px);
@@ -82,24 +82,29 @@
   @include list-clear;
 }
 
-.photos__item {
+.photos__list .photos__item {
   width: 280px;
-  margin-bottom: 20px;
-  padding-bottom: 25px;
+  margin-bottom: 18px;
+  padding-bottom: 20px;
   background-color: #f2f2f2;
+}
+
+.photos__panoram-of-day .photos__item {
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
 }
 
 .photos__text {
   padding: 0 18px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
 
   @include font-param (14px, 24px);
 }
 
 .photos__author-info {
   padding: 0 18px;
-  margin-top: 25px;
+  margin-top: 15px;
 
   @include font-param(14px, 24px);
 }
@@ -151,10 +156,16 @@
 @media (min-width: $tablet-width) {
   .photos__title {
     margin-top: -110px;
-    padding: 190px 0;
+    padding-top: 190px;
+    padding-bottom: 150px;
 
     @include font-param(50px, 50px);
     background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .photos__author-info,
+  .photos__text {
+    padding: 0 25px;
   }
 
   .photos__panoram-of-day {
@@ -168,7 +179,7 @@
 
   .photos__panoram-of-day .photos__like {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 55px;
   }
 
@@ -178,7 +189,7 @@
 
   .photos__panoram-label {
     top: 60px;
-    right: 40px;
+    right: 20px;
   }
 
   .photos__wrapper {
@@ -186,6 +197,7 @@
   }
 
   .photos__list {
+    margin-top: 35px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
@@ -196,10 +208,11 @@
     margin-right: 20px;
   }
 
-  .photos__item {
+  .photos__list .photos__item {
     display: flex;
     flex-direction: column;
     width: 300px;
+    min-height: 435px;
   }
 
   .photos__text-container {
@@ -210,20 +223,32 @@
   }
 
   .photos__descriprion {
-    margin-top: 100px;
-    margin-bottom: 80px;
+    padding: 0 80px;
+    margin-top: 95px;
+    margin-bottom: 75px;
 
     @include font-param(18px, 30px);
+  }
+
+  .photos__list .photos__like {
+    padding-left: 25px;
+    margin: 0;
+  }
+
+  .photos__list .photos__like::before {
+    left: 250px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photos__title {
     margin-top: -110px;
-    padding-top: 175px;
-    padding-bottom: 105px;
+    padding-top: 180px;
+    padding-bottom: 115px;
+    padding-left: 25%;
+    padding-right: 25%;
 
-    @include font-param(50px, 50px);
+    @include font-param(50px, 55px);
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
@@ -241,5 +266,15 @@
 
   .photos__panoram-of-day .photos__item {
     width: 940px;
+  }
+
+  .photos__list {
+    margin: 0;
+  }
+
+  .photos__list .photos__item {
+    min-height: 535px;
+    margin-top: 52px;
+    margin-bottom: 0;
   }
 }
