@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
@@ -72,6 +73,69 @@
       <section class="contest">
         <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
         <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+        <form class="contest__contest-form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="visually-hidden">Имя пользователя</legend>
+            <p class="contest-form__field">
+              <label for="surname">Фамилия:</label>
+              <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
+            </p>
+            <p class="contest-form__field">
+              <label for="first-name">Имя:</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *">
+            </p>
+            <p class="contest-form__field">
+              <label for="second-name">Отчество:</label>
+              <input type="text" id="second-name" name="second-name" placeholder="Ну и отчество тоже *">
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="checkbox-shark"
+                name="photo-with-shark">
+                <label for="checkbox-shark">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input type="checkbox" id="checkbox-beach"
+                name="burn-at-beach">
+                <label for="checkbox-beach">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input type="checkbox" id="checkbox-norris"
+                name="see-chacknorris">
+                <label for="checkbox-norris">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input type="checkbox" id="checkbox-souvenirs"
+                name="buy-souvenirs">
+                <label for="checkbox-souvenirs">Накупил сувениров</label>
+              </li>
+              <li>
+                <input type="checkbox" id="checkbox-tower"
+                name="hold-tower">
+                <label for="checkbox-tower">Удержал башню</label>
+              </li>
+              <li>
+                <input type="checkbox" id="checkbox-hotel"
+                name="destroy-hotel">
+                <label for="checkbox-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Контакты</legend>
+            <p class="contest-form__field">
+              <label for="phone-number">Номер телефона:</label>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="contest-form__field">
+              <label for="e-mail">Адрес почты:</label>
+              <input type="email" id="e-mail" name="e-mail" placeholder="Введите почту *" required>
+            </p>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer class="page-footer">

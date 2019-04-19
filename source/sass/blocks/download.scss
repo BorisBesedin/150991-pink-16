@@ -10,14 +10,6 @@
   background-size: cover;
 }
 
-.download__image-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  @include wrapper-set;
-}
-
 .download__title {
   display: none;
 }
@@ -28,26 +20,33 @@
   background-color: #1d2631;
 }
 
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .download__image {
   height: 290px;
   width: 100%;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: calc(50% - 30px) 0;
 }
 
 .download__download-button {
-  margin: 0 10px;
-  margin-top: 30px;
+  width: 280px;
+  margin-top: 25px;
   margin-bottom: 30px;
   display: block;
-  padding: 16px;
+  padding: 15px 0;
 
   @include font-param(18px, 18px);
   text-align: center;
   color: #ffffff;
+  font-weight: bold;
   border: 3px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 30px;
 
   &:hover {
     background-color: #ffffff;
@@ -62,6 +61,7 @@
 .download__os {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @include list-clear;
 }
@@ -92,7 +92,8 @@
 }
 
 .download__description {
-  margin-top: 30px;
+  width: 280px;
+  margin-top: 20px;
   margin-bottom: 30px;
   text-align: center;
 
@@ -111,48 +112,46 @@
   }
 
   .download__wrapper {
-    width: 320px;
     flex-direction: column;
     justify-content: flex-start;
   }
 
-  .download__image-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-left: -300px;
-  }
-
   .download__title {
     display: block;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 0;
     padding: 0 30px;
     text-align: center;
 
-    @include font-param(40px, 45px);
+    @include font-param(40px, 48px);
     font-weight: normal;
   }
 
   .download__container {
+    margin-left: 20px;
     width: 300px;
     background-color: transparent;
   }
 
   .download__image {
+    margin-left: -300px;
     height: 550px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: bottom;
+    background-position: -40px 5px;
   }
 
   .download__download-button {
-    margin-top: 35px;
+    width: 300px;
+    margin-top: 30px;
     margin-bottom: 45px;
   }
 
   .download__description {
-    margin-top: 30px;
+    width: 310px;
+    margin-top: 32px;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: normal;
 
     @include font-param(18px, 24px);
   }
@@ -163,6 +162,10 @@
     padding-top: 205px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .logo {
+    width: 300px;
   }
 
   .download__image {

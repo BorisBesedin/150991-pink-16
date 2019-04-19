@@ -7,12 +7,13 @@
 
 .main-nav__link {
   display: block;
-  padding: 16px 0;
+  padding: 15px 0;
 
   text-align: center;
-  background-color: #1c2530;
+  background-color: #283645;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: bold;
 
   @include font-param(18px, 32px);
   border-top: 1px solid #485461;
@@ -33,7 +34,7 @@
   width: 50px;
   height: 25px;
   top: 20px;
-  right: 30px;
+  right: 20px;
 
   background: transparent;
   outline: none;
@@ -80,9 +81,9 @@
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 35px;
+    top: 8px;
+    right: -11px;
+    width: 30px;
     height: 4px;
 
     background-color: #ffffff;
@@ -115,11 +116,13 @@
 
   .main-nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   .main-nav__list {
-    width: 630px;
+    width: 620px;
+    margin-left: 20px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -128,6 +131,7 @@
     padding: 12px 0;
     background: transparent;
     border: none;
+    font-weight: normal;
 
     text-transform: none;
   }
