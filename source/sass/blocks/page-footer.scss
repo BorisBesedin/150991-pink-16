@@ -100,4 +100,8 @@
     max-width: 940px;
     flex-direction: row;
   }
+
+  .page-footer__copyright {
+    @include font-param(18px, 18px);
+  }
 }

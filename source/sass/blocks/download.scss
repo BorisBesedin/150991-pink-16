@@ -169,18 +169,22 @@
   }
 
   .download__image {
-    height: 645px;
+    height: 650px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: bottom;
+    background-position: calc(50% + 60px) 10px;
   }
 
   .download__title {
-    @include font-param(50px, 55px);
+    margin-top: 20px;
+
+    @include font-param(50px, 58px);
+    font-weight: normal;
   }
 
   .download__download-button {
+    width: 294px;
     margin-top: 55px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 
     @include font-param(21px, 18px);
   }
@@ -191,5 +195,9 @@
 
   .download__description {
     margin-top: 50px;
+  }
+
+  .download__container {
+    margin-left: 10px;
   }
 }

@@ -94,10 +94,11 @@
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
   }
 
   .features__list {
-    margin-top: 76px;
+    margin-top: 40px;
     margin-right: 15px;
     width: 310px;
     text-align: left;
@@ -183,16 +184,27 @@
   }
 
   .features__description {
-    @include font-param(50px, 55px);
+    margin: 0;
+
+    @include font-param(50px, 58px);
+  }
+
+  .features__item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .features__wrapper,
   .research__wrapper {
-    max-width: 940px;
+    width: 940px;
+    margin: 0 auto;
   }
 
   .features__list {
-    width: 100%;
+    margin-top: 45px;
+    width: 940px;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -201,6 +213,11 @@
 
   .research {
     background-color: #f2f2f2;
+  }
+
+  .research__title {
+    margin-top: 45px;
+    width: 100%;
   }
 
   .research__container {
@@ -215,14 +232,16 @@
   }
 
   .research__text {
-    padding-top: 20px;
+    width: 100%;
+    padding-top: 15px;
     padding-bottom: 20px;
+    padding-right: 20px;
 
     @include font-param(18px, 30px);
   }
 
   .research__wrapper {
-    margin-top: 65px;
+    margin-top: 60px;
     margin-bottom: 65px;
     justify-content: space-between;
   }
@@ -237,6 +256,7 @@
   }
 
   .features__title {
+    width: 230px;
     margin-top: 55px;
 
     @include font-param(30px, 30px);
@@ -244,6 +264,7 @@
 
   .features__text {
     margin-top: 30px;
+    width: 240px;
 
     @include font-param(18px, 30px);
   }

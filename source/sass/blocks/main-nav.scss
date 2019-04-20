@@ -81,8 +81,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
-    right: -11px;
+    top: 10px;
+    right: -5px;
     width: 30px;
     height: 4px;
 
@@ -122,7 +122,6 @@
 
   .main-nav__list {
     width: 620px;
-    margin-left: 20px;
     flex-direction: row;
     justify-content: space-between;
   }
