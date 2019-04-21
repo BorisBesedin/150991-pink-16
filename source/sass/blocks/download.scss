@@ -1,13 +1,12 @@
 .download {
-  margin-top: -65px;
-  padding-top: 175px;
-
   background-color: #1d2631;
-  color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  margin-top: -65px;
+  padding-top: 175px;
+  color: #ffffff;
 }
 
 .download__title {
@@ -20,7 +19,7 @@
   background-color: #1d2631;
 }
 
-.download__wrapper {
+.download__column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,15 +102,19 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    display: flex;
-    flex-direction: row-reverse;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     padding-top: 180px;
     margin-top: -110px;
-
-    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   .download__wrapper {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .download__column {
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -128,7 +131,6 @@
   }
 
   .download__container {
-    margin-left: 20px;
     width: 300px;
     background-color: transparent;
   }
@@ -137,7 +139,7 @@
     margin-left: -300px;
     height: 550px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -40px 5px;
+    background-position: 50% 5px;
   }
 
   .download__download-button {
@@ -159,9 +161,13 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    padding-top: 205px;
-
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    padding-top: 205px;
+  }
+
+  .download__wrapper {
+    width: 940px;
+    margin: 0 auto;
   }
 
   .logo {
@@ -171,7 +177,7 @@
   .download__image {
     height: 650px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: calc(50% + 60px) 10px;
+    background-position: calc(50% + 70px) 10px;
   }
 
   .download__title {
@@ -195,9 +201,5 @@
 
   .download__description {
     margin-top: 50px;
-  }
-
-  .download__container {
-    margin-left: 10px;
   }
 }
