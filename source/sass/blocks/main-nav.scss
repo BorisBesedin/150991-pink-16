@@ -7,24 +7,135 @@
 
 .main-nav__link {
   display: block;
-  padding: 16px;
+  padding: 15px 0;
 
   text-align: center;
-  background-color: #1c2530;
+  background-color: #283645;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: bold;
 
   @include font-param(18px, 32px);
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 25px;
+  top: 20px;
+  right: 20px;
+
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 5px;
+  width: 50px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+@media (max-width: 959px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: flex;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 25px;
+  height: 25px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    width: 30px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .main-nav__list {
+    width: 620px;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .main-nav__link {
+    padding: 12px 0;
     background: transparent;
+    border: none;
+    font-weight: normal;
+
+    text-transform: none;
+  }
+
+  .main-nav__link--active {
+    box-shadow: 0 3px 0 0 #ffffff;
   }
 }

@@ -1,21 +1,12 @@
 .download {
-  margin-top: -65px;
-  padding-top: 175px;
-
   background-color: #1d2631;
-  color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-}
-
-.download__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  @include wrapper-set;
+  margin-top: -65px;
+  padding-top: 175px;
+  color: #ffffff;
 }
 
 .download__title {
@@ -28,49 +19,115 @@
   background-color: #1d2631;
 }
 
+.download__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .download__image {
   height: 290px;
   width: 100%;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: calc(50% - 30px) 0;
 }
 
 .download__download-button {
+  width: 280px;
+  margin-top: 25px;
   margin-bottom: 30px;
   display: block;
-  padding: 16px;
+  padding: 15px 0;
 
   @include font-param(18px, 18px);
   text-align: center;
   color: #ffffff;
+  font-weight: bold;
   border: 3px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download__os {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @include list-clear;
 }
 
+.os-list__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.os-list__item:not(:nth-child(3)) {
+  margin-right: 20px;
+}
+
+.os-list__link--apple {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.os-list__link--android {
+  background-image: url("../img/logo-android.svg");
+}
+
+.os-list__link--windows {
+  background-image: url("../img/logo-microsoft.svg");
+}
+
 .download__description {
+  width: 280px;
   margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
 
   @include font-param(14px, 24px);
+  font-weight: normal;
 }
 
 @media (min-width: $tablet-width) {
   .download {
-    padding-top: 180px;
-
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    padding-top: 180px;
+    margin-top: -110px;
   }
 
   .download__wrapper {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
     flex-direction: row-reverse;
+  }
+
+  .download__column {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .download__title {
     display: block;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 0 30px;
+    text-align: center;
+
+    @include font-param(40px, 48px);
+    font-weight: normal;
   }
 
   .download__container {
@@ -79,26 +136,70 @@
   }
 
   .download__image {
+    margin-left: -300px;
     height: 550px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: bottom;
+    background-position: 50% 5px;
+  }
+
+  .download__download-button {
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  .download__description {
+    width: 310px;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+
+    @include font-param(18px, 24px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
-    padding-top: 205px;
-
     background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
-
-  .download__image {
-    height: 645px;
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: bottom;
+    padding-top: 205px;
   }
 
   .download__wrapper {
-    max-width: 940px;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .download__image {
+    height: 650px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: calc(50% + 70px) 10px;
+  }
+
+  .download__title {
+    margin-top: 20px;
+
+    @include font-param(50px, 58px);
+    font-weight: normal;
+  }
+
+  .download__download-button {
+    width: 294px;
+    margin-top: 55px;
+    margin-bottom: 70px;
+
+    @include font-param(21px, 18px);
+  }
+
+  .download__image-wrapper {
+    margin-left: 0;
+  }
+
+  .download__description {
+    margin-top: 50px;
   }
 }
