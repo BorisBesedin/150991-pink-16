@@ -162,28 +162,74 @@
           <h2 class="visually-hidden">Стоимость</h2>
           <ul class="price__list slider__list">
             <li class="price__item slider__item price__item--bestseller">
-              <span class="price__option-name">Стандарт</span>
-              <p class="price__option-price">3,99 usd</p>
+              <div class="price__header">
+                <span class="price__option-name">База</span>
+                <p class="price__option-price">1,99 usd</p>
+              </div>
               <table class="price__option-description option-table">
                 <tr>
                   <td class="option-table__name">Розовый фильтр</td>
-                  <td class="option-table__value">Есть</td>
+                  <td class="option-table__value option-table__value--yes"><span class="visually-hidden">Есть</span></td>
                 </tr>
                 <tr>
                   <td class="option-table__name">Смайлики</td>
-                  <td class="option-table__value">Есть</td>
+                  <td class="option-table__value option-table__value--no"><span class="visually-hidden">Нет</span></td>
                 </tr>
                 <tr>
                   <td class="option-table__name">Комментарии</td>
-                  <td class="option-table__value">Нет</td>
+                  <td class="option-table__value option-table__value--no"><span class="visually-hidden">Нет</span></td>
+                </tr>
+              </table>
+            </li>
+
+            <li class="price__item slider__item price__item--bestseller">
+              <div class="price__header">
+                <span class="price__option-name">Стандарт</span>
+                <p class="price__option-price">3,99 usd</p>
+              </div>
+              <table class="price__option-description option-table">
+                <tr>
+                  <td class="option-table__name">Розовый фильтр</td>
+                  <td class="option-table__value option-table__value--yes"><span class="visually-hidden">Есть</span></td>
+                </tr>
+                <tr>
+                  <td class="option-table__name">Смайлики</td>
+                  <td class="option-table__value option-table__value--yes"><span class="visually-hidden">Есть</span></td>
+                </tr>
+                <tr>
+                  <td class="option-table__name">Комментарии</td>
+                  <td class="option-table__value option-table__value--no"><span class="visually-hidden">Нет</span></td>
+                </tr>
+              </table>
+            </li>
+
+            <li class="price__item slider__item price__item--bestseller">
+              <div class="price__header">
+                <span class="price__option-name">Анлим</span>
+                <p class="price__option-price">9,99 usd</p>
+              </div>
+              <table class="price__option-description option-table">
+                <tr>
+                  <td class="option-table__name">Розовый фильтр</td>
+                  <td class="option-table__value option-table__value--yes"><span class="visually-hidden">Есть</span></td>
+                </tr>
+                <tr>
+                  <td class="option-table__name">Смайлики</td>
+                  <td class="option-table__value option-table__value--yes"><span class="visually-hidden">Есть</span></td>
+                </tr>
+                <tr>
+                  <td class="option-table__name">Комментарии</td>
+                  <td class="option-table__value option-table__value--yes"><span class="visually-hidden">Есть</span></td>
                 </tr>
               </table>
             </li>
           </ul>
-          <div class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--active" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <div class="price__toggles-container">
+            <div class="price__toggles slider__toggles">
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--active" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+            </div>
           </div>
         </div>
       </section>
