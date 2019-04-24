@@ -132,12 +132,12 @@
 
     &.slider__left {
       left: 1%;
-      background-image: url("../../img/icon-review-arrow-left.svg");
+      background-image: url("../img/icon-review-arrow-left.svg");
     }
 
     &.slider__right {
       right: 1%;
-      background-image: url("../../img/icon-review-arrow-right.svg");
+      background-image: url("../img/icon-review-arrow-right.svg");
     }
   }
 
@@ -155,7 +155,7 @@
       top: -110px;
       right: calc(50% - (79px / 2));
 
-      background-image: url("../../img/icon-quotes.svg");
+      background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       opacity: 0.07;
     }
