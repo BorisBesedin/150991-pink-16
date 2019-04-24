@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .features__description {
@@ -58,6 +58,11 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
 }
 
 .features__item-image {
@@ -74,18 +79,6 @@
   display: flex;
 
   @include wrapper-set;
-}
-
-.research__timer {
-  display: block;
-  padding: 40px;
-  width: 90px;
-
-  font-size: 96px;
-  line-height: 90px;
-  color: #d22856;
-  border: 15px solid #d22856;
-  border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {
@@ -114,6 +107,11 @@
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   .research {
@@ -127,11 +125,31 @@
   }
 
   .research__image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 240px;
     height: 275px;
-    background-image: url("../img/timer.png");
+
+    background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .research__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+    width: 175px;
+    height: 175px;
+
+    border: 13px solid #d22856;
+    border-radius: 50%;
+    color: #d22856;
+
+    @include font-param(96px, 147px);
+    font-weight: bold;
   }
 
   .research__wrapper {
@@ -247,8 +265,18 @@
   }
 
   .research__image {
-    width: 300px;
+    width: 298px;
     height: 345px;
+  }
+
+  .research__timer {
+    margin-bottom: 22px;
+    width: 220px;
+    height: 220px;
+
+    border: 17px solid #d22856;
+
+    @include font-param(120px, 186px);
   }
 
   .features__item-image {
