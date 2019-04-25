@@ -18,6 +18,7 @@
 }
 
 .price__item {
+  position: relative;
   width: 33%;
   display: flex;
   flex-direction: column;
@@ -100,4 +101,24 @@
 
 .price .slider__toggles {
   margin: 0;
+}
+
+.price__item--bestseller::after {
+  content: "Хит";
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  top: 10px;
+  left: -25px;
+  background-color: #d22856;
+  background: linear-gradient(135deg, transparent 20px, #d22856 0) left, linear-gradient(225deg, transparent 20px, #d22856 0) right;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  transform: rotate(-45deg);
+  text-align: center;
+
+
+  @include font-param(14px, 30px);
+  text-transform: uppercase;
+  color: #ffffff;
 }
