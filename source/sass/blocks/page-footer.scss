@@ -1,18 +1,21 @@
 .page-footer {
   background-color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 50px;
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 
   @include wrapper-set;
 }
 
 .social {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .social__list {
@@ -58,6 +61,7 @@
 
 .page-footer__copyright {
   margin: 0;
+  padding-bottom: 5px;
   display: flex;
   align-items: center;
 
