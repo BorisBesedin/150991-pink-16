@@ -1,6 +1,6 @@
 .page-footer {
   background-color: #ffffff;
-  padding-top: 0;
+  padding-top: 40px;
   padding-bottom: 50px;
 }
 
@@ -86,10 +86,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 0;
+  }
+
   .page-footer__wrapper {
+    height: 125px;
     max-width: 620px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .social__list {
