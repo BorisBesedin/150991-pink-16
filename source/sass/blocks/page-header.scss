@@ -24,12 +24,16 @@
   font-weight: normal;
 }
 
+.logo__icon {
+  fill: #ffffff;
+}
+
 .page-header__logo {
   padding: 22px 0;
   width: 74px;
   height: 23px;
 
-  &:hover path {
+  &:hover .logo__icon {
     fill: #d22856;
   }
 
