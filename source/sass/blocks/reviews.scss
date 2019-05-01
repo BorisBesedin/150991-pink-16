@@ -50,6 +50,14 @@
   border-radius: 50%;
   cursor: pointer;
   outline: none;
+
+  &:not(.slider__toggle--active):hover {
+    background-color: #7e868f;
+  }
+
+  &:not(.slider__toggle--active):active {
+    opacity: 0.3;
+  }
 }
 
 .slider__toggle:not(:first-child) {
@@ -127,8 +135,17 @@
     height: 41px;
     background-color: transparent;
     border: none;
-    opacity: 0.3;
+    opacity: 0.2;
     cursor: pointer;
+    outline: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
 
     &.slider__left {
       left: 1%;
