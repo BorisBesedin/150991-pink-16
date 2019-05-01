@@ -10,6 +10,14 @@
 }
 
 @mixin wrapper-set() {
-  width: calc(100% - 40px);
+  width: 87%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 94%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 98%;
+  }
 }

@@ -6,20 +6,24 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper-desktop">
         <div class="page-header__wrapper">
           <a href="index.html" class="page-header__logo logo">
             <svg class="logo__icon logo__icon-mobile" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859">
-              <use xlink:href="img/sprite.svg#logo-h-mobile"></use>
+              <use xlink:href="#logo-h-mobile"></use>
             </svg>
             <svg class="logo__icon logo__icon-tablet" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
-              <use xlink:href="img/sprite.svg#logo-h-tablet"></use>
+              <use xlink:href="#logo-h-tablet"></use>
             </svg>
             <svg class="logo__icon logo__icon-desktop" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
-              <use xlink:href="img/sprite.svg#logo-h-desktop"></use>
+              <use xlink:href="#logo-h-desktop"></use>
             </svg>
           </a>
         </div>
@@ -271,10 +275,10 @@
       <div class="page-footer__wrapper">
         <a href="index.html" class="page-footer__logo">
           <svg class="page-footer__logo-image page-footer__logo-image--tablet"x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
-            <use xlink:href="img/sprite.svg#logo-f-tablet"></use>
+            <use xlink:href="#logo-f-tablet"></use>
           </svg>
           <svg class="page-footer__logo-image page-footer__logo-image--desktop"x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
-            <use xlink:href="img/sprite.svg#logo-f-desktop"></use>
+            <use xlink:href="#logo-f-desktop"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -292,7 +296,7 @@
         </div>
         <div class="page-footer__copyright"><span class="page-footer__develop-by">Разработано</span>
           <a href="https://htmlacademy.ru/" class="page-footer__copyright-link">
-            <svg class="page-footer__icon" viewBox="0 0 60 60" width="40" height="40"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            <svg class="page-footer__icon" viewBox="0 0 60 60" width="40" height="40"><use xlink:href="#logo-academy"></use></svg>
             <span class="visually-hidden">htmlacademy</span>
           </a>
         </div>

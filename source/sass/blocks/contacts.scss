@@ -18,10 +18,11 @@
   bottom: 5px;
   left: 0;
 
-  background: linear-gradient(12deg, transparent 50%, #ffffff 0) left,
-    linear-gradient(-12deg, transparent 50%, #ffffff 0) right;
+  background-image: linear-gradient(12deg, transparent 50%, #ffffff 0),
+    linear-gradient(-12deg, transparent 50%, #ffffff 0);
+  background-position: left, right;
   background-repeat: no-repeat;
-  background-size: 50% 100%;
+  background-size: 51% 100%;
 }
 
 .contacts__wrapper {
@@ -116,11 +117,6 @@
     height: 70px;
     bottom: -25px;
     left: 0;
-
-    background: linear-gradient(12deg, transparent 50%, #ffffff 0) left,
-      linear-gradient(-12deg, transparent 50%, #ffffff 0) right;
-    background-repeat: no-repeat;
-    background-size: 50% 100%;
   }
 
   .contacts__map iframe {
@@ -164,11 +160,6 @@
     height: 100px;
     bottom: -60px;
     left: 0;
-
-    background: linear-gradient(12deg, transparent 50%, #ffffff 0) left,
-      linear-gradient(-12deg, transparent 50%, #ffffff 0) right;
-    background-repeat: no-repeat;
-    background-size: 50% 100%;
   }
 
   .contacts__map iframe {
