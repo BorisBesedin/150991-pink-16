@@ -3,11 +3,8 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.logo__icon-desktop {
-  display: none;
-}
-
-.logo__icon-tablet {
+.logo-h-tablet,
+.logo-h-desktop {
   display: none;
 }
 
@@ -54,11 +51,11 @@
     padding: 25px 0 40px;
   }
 
-  .logo__icon-mobile {
+  .logo-h-mobile {
     display: none;
   }
 
-  .logo__icon-tablet {
+  .logo-h-tablet {
     display: block;
   }
 }
@@ -74,12 +71,11 @@
     width: auto;
   }
 
-  .logo__icon-tablet,
-  .logo__icon-mobile {
+  .logo-h-tablet {
     display: none;
   }
 
-  .logo__icon-desktop {
+  .logo-h-desktop {
     display: block;
   }
 }
