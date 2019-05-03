@@ -293,6 +293,10 @@
     margin-right: 20px;
   }
 
+  .photos__panoram-of-day .photos__item--panoram {
+    margin: 0 auto;
+  }
+
   .photos__panoram-of-day {
     margin-top: 10px;
     max-width: 100%;
@@ -310,7 +314,7 @@
 
   .photos__panoram-of-day .photos__author-info,
   .photos__panoram-of-day .photos__text {
-    padding-left: 40px;
+    padding-left: 25px;
   }
 
   .photos__panoram-label {
@@ -324,7 +328,7 @@
   }
 
   .photos__panoram-of-day .photos__like {
-    top: 25px;
-    right: 50px;
+    top: 23px;
+    right: 65px;
   }
 }

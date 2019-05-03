@@ -57,8 +57,17 @@
   font-weight: normal;
 }
 
-.contacts__description a {
+.contacts__type {
   color: inherit;
+
+  &:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__list {

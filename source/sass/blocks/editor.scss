@@ -268,7 +268,7 @@
   }
 
   .editor__controls {
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   .editor__photo-image img {
@@ -305,5 +305,17 @@
 
   .editor__wrapper {
     margin: 0;
+  }
+
+  .editor__range--crop .range__toggle {
+    right: 235px;
+  }
+
+  .editor__range--fill .range__toggle {
+    right: 60px;
+  }
+
+  .editor__range--contrast .range__toggle {
+    right: 145px;
   }
 }
