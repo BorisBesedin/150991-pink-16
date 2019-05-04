@@ -89,6 +89,11 @@
   margin-top: -40px;
 }
 
+.contacts__map iframe {
+  width: 100%;
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;

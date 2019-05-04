@@ -126,9 +126,13 @@
   margin-top: 45px;
 }
 
-.achieves li {
+.achieves__item {
   margin-bottom: 52px;
   position: relative;
+}
+
+.achieves__group ul {
+  @include list-clear;
 }
 
 .achieves label,
@@ -220,6 +224,7 @@
 }
 
 .form__message textarea {
+  resize: none;
   margin-top: 15px;
   padding-bottom: 30px;
 }
@@ -561,6 +566,14 @@
     flex-wrap: wrap;
   }
 
+  .achieves__group {
+    margin-bottom: 0;
+  }
+
+  .achieves__group:not(:nth-child(3)) {
+    margin-right: 55px;
+  }
+
   .field-container {
     display: flex;
     flex-direction: row;
@@ -574,10 +587,6 @@
     width: 940px;
     margin: 0 auto;
     padding-bottom: 10px;
-  }
-
-  .achieves__container:not(:nth-child(3n)) {
-    margin-right: 55px;
   }
 
   .form__achieves {
@@ -598,8 +607,10 @@
   }
 
   .form__message textarea {
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 45px;
     height: 80px;
   }
 
