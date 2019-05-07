@@ -46,7 +46,7 @@
 }
 
 @media (max-width: 659px) {
-  .contest__description--notmobile {
+  .contest__description-notmobile {
     display: none;
   }
 }
@@ -259,12 +259,12 @@
   color: #283645;
   text-align: center;
 
-  & .form__legend--star {
+  & .form__legend-star {
     color: #d22856;
   }
 }
 
-.form__legend--desktop {
+.form__legend-desktop {
   display: none;
 }
 
@@ -620,7 +620,7 @@
     justify-content: center;
   }
 
-  .form__legend--desktop {
+  .form__legend-desktop {
     display: block;
   }
 
