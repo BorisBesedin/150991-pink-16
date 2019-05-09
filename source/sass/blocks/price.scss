@@ -112,7 +112,7 @@
   align-items: center;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 659px) {
   .table__none,
   .table__left,
   .table__center,
@@ -197,6 +197,8 @@
   }
 
   .table__name {
+    margin-top: 5px;
+
     @include font-param(18px, 30px);
   }
 

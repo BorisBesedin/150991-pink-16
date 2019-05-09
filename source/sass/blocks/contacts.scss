@@ -54,7 +54,7 @@
 
   @include font-param(24px, 30px);
   color: #d22856;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .contacts__type {
@@ -109,16 +109,20 @@
     padding-right: 10%;
 
     @include font-param(40px, 48px);
+    font-weight: 300;
   }
 
   .contacts__list {
     width: 620px;
+    margin-bottom: 45px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 
     & .contacts__item {
-      margin-top: 15px;
-      width: 310px;
+      margin-top: 13px;
+      margin-bottom: 30px;
+      width: 290px;
     }
 
     & .contacts__description {
@@ -134,7 +138,7 @@
   }
 
   .contacts__map iframe {
-    height: 370px;
+    height: 360px;
   }
 }
 

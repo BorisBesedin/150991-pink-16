@@ -106,7 +106,7 @@
   text-align: center;
 
   @include font-param(14px, 24px);
-  font-weight: normal;
+  font-weight: 300;
 }
 
 @media (min-width: $tablet-width) {
@@ -134,14 +134,13 @@
 
   .download__title {
     display: block;
-    width: 100%;
+    width: 200px;
     margin-top: 25px;
     margin-bottom: 0;
-    padding: 0 30px;
     text-align: center;
 
     @include font-param(40px, 48px);
-    font-weight: normal;
+    font-weight: 300;
   }
 
   .download__container {
@@ -172,7 +171,7 @@
     margin-top: 32px;
     margin-bottom: 30px;
     text-align: center;
-    font-weight: normal;
+    font-weight: 300;
 
     @include font-param(18px, 24px);
   }
@@ -209,10 +208,10 @@
   }
 
   .download__title {
-    margin-top: 20px;
+    margin-top: 15px;
+    width: 300px;
 
     @include font-param(50px, 58px);
-    font-weight: normal;
   }
 
   .download__download-button {
