@@ -2,10 +2,6 @@
   background-color: #ffffff;
 }
 
-.page-footer {
-  display: none;
-}
-
 .contacts__info {
   position: relative;
 }
@@ -95,10 +91,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    display: flex;
-  }
-
   .contacts__wrapper {
     width: 620px;
     margin: 0 auto;

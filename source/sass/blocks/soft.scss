@@ -1,0 +1,77 @@
+.soft-list__item label {
+  margin-left: 70px;
+
+  @include font-param(18px, 30px);
+  color: #283645;
+
+  &:hover::before {
+    border-color: #000000;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+}
+
+.soft-list {
+  @include list-clear;
+  margin-top: 25px;
+}
+
+.soft-list__item {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.soft-list__item label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: -5px;
+  left: 0;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e6;
+  border-radius: 50%;
+}
+
+.soft-list__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 7px;
+  left: 11px;
+
+  border: 1px solid #d22856;
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .soft-container {
+    width: 100%;
+  }
+
+  .soft-list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 60px;
+
+    & label {
+      margin-left: 60px;
+    }
+  }
+
+  .soft-list__item {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .soft-list {
+    margin-top: 38px;
+    margin-left: 70px;
+    padding-top: 0;
+  }
+}
