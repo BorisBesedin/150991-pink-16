@@ -26,6 +26,10 @@
   margin: 0;
 }
 
+.reviews__list {
+  max-width: 100%;
+}
+
 .reviews .slider {
   display: flex;
   flex-direction: column;

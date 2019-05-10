@@ -8,6 +8,7 @@ var userName = document.querySelector("[name=first-name]");
 var surname = document.querySelector("[name=surname]");
 var popupOK = document.querySelector(".popup__button--ok");
 var popupClose = document.querySelector(".popup__button--close");
+var submit = document.querySelector(".form__submit");
 
 navMain.classList.remove("main-nav--nojs");
 navToggle.addEventListener("click", function() {
@@ -20,9 +21,7 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-form.addEventListener("submit", function(evt) {
-  evt.preventDefault();
-  console.log('sddd');
+submit.addEventListener("click", function(evt) {
   if (!userName.value || !surname.value || !email.value) {
     failurePopup.classList.add("popup--show");
   } else {
