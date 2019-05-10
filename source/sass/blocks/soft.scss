@@ -8,6 +8,10 @@
     border-color: #000000;
   }
 
+  &:focus::before {
+    border-color: #000000;
+  }
+
   &:active::before {
     border-color: #d22856;
   }
@@ -33,6 +37,10 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e6;
   border-radius: 50%;
+}
+
+.soft-list__radio:focus + label::before {
+  border-color: #000000;
 }
 
 .soft-list__radio:checked + label::after {

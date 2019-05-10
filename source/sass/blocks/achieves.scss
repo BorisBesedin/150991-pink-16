@@ -26,6 +26,10 @@
   }
 }
 
+.achieves__checkbox:focus + label::before {
+  border-color: #000000;
+}
+
 .achieves label::before {
   content: "";
   position: absolute;
