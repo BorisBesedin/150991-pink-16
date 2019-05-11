@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .features__description {
@@ -32,6 +32,7 @@
 
   @include font-param(24px, 28px);
   text-align: center;
+  font-weight: 300;
 }
 
 .features__title {
@@ -266,6 +267,10 @@
     padding-right: 20px;
 
     @include font-param(18px, 30px);
+  }
+
+  .research__title span {
+    margin-right: 10px;
   }
 
   .research__wrapper {
