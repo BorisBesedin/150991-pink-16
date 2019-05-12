@@ -32,7 +32,8 @@
 
 .form__field input,
 .form__message textarea {
-  padding: 15px 20px;
+  padding: 0 20px;
+  height: 60px;
 
   outline: none;
   border: 2px solid #e5e5e5;
