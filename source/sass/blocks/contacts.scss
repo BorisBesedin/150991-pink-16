@@ -117,16 +117,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
 
-    & .contacts__item {
-      margin-top: 13px;
-      margin-bottom: 30px;
-      width: 290px;
-    }
+  .contacts__list .contacts__item {
+    margin-top: 13px;
+    margin-bottom: 30px;
+    width: 290px;
+  }
 
-    & .contacts__description {
-      margin-top: 5px;
-    }
+  .contacts__list .contacts__description {
+    margin-top: 5px;
   }
 
   .contacts__info::after {

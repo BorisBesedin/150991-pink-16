@@ -81,6 +81,7 @@
 .form__message textarea {
   resize: none;
   margin-top: 15px;
+  padding-top: 15px;
   padding-bottom: 30px;
 }
 
@@ -118,10 +119,10 @@
   text-transform: uppercase;
   color: #283645;
   text-align: center;
+}
 
-  & .form__legend-star {
-    color: #d22856;
-  }
+.form__legend .form__legend-star {
+  color: #d22856;
 }
 
 .form__legend-desktop {
@@ -138,16 +139,16 @@
     &:last-child {
       margin-bottom: 65px;
     }
+  }
 
-    & label {
-      margin-left: 0;
-    }
+  .form__field label {
+    margin-left: 0;
+  }
 
-    & input {
-      margin-top: 0;
-      margin-left: 16px;
-      flex-grow: 2;
-    }
+  .form__field input {
+    margin-top: 0;
+    margin-left: 16px;
+    flex-grow: 2;
   }
 
   .form__soft {
@@ -241,13 +242,13 @@
     margin-top: 65px;
 
     border: 2px solid #e5e5e5;
+  }
 
-    & textarea {
-      margin-top: 38px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-bottom: 45px;
-    }
+  .form__message textarea {
+    margin-top: 38px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 45px;
   }
 
   .submit {
@@ -257,16 +258,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
 
-    & .form__submit {
-      margin: 0;
-      width: 300px;
-      font-weight: bold;
-    }
+  .submit .form__submit {
+    margin: 0;
+    width: 300px;
+    font-weight: bold;
+  }
 
-    & .form__legend {
-      margin: 0;
-    }
+  .submit .form__legend {
+    margin: 0;
   }
 
   .form__title {
@@ -301,10 +302,10 @@
     margin: 0 auto;
     margin-top: 55px;
     padding-top: 35px;
+  }
 
-    & input {
-      width: 331px;
-    }
+  .form__contacts input {
+    width: 331px;
   }
 
   .form__contacts .form__field {
