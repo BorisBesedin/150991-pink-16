@@ -346,6 +346,7 @@
   .field-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     padding-left: 60px;

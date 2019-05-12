@@ -148,7 +148,7 @@
   width: 13px;
   height: 12px;
   top: 4px;
-  left: 18px;
+  right: 250px;
 
   background-image: url("../img/icon-heart.svg");
 }
@@ -193,7 +193,7 @@
 
   .photos__panoram-of-day .photos__like::before {
     top: 6px;
-    left: 155px;
+    right: -30px;
   }
 
   .photos__panoram-label {
@@ -313,7 +313,7 @@
 
   .photos__panoram-of-day .photos__like::before {
     top: 5px;
-    left: 160px;
+    right: -35px;
   }
 
   .photos__panoram-of-day .photos__like {
