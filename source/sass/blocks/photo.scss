@@ -6,27 +6,30 @@
   color: #283645;
 }
 
-.photos__title {
-  display: block;
-  margin: 0;
+.photos__title-container {
+  width: 100%;
   margin-top: -65px;
-  padding-top: 100px;
+  padding-top: 95px;
   padding-bottom: 85px;
-  padding-right: 25%;
-  padding-left: 25%;
-  width: 60%;
-
-  @include font-param(24px, 24px);
-  font-weight: 300;
   text-align: center;
-  color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #283645;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
+}
+
+.photos__title {
+  width: 55%;
+  margin: 0 auto;
+
+  @include font-param(24px, 28px);
+  font-weight: 300;
+  color: #ffffff;
 }
 
 .photos__panoram-of-day {
@@ -77,10 +80,9 @@
 }
 
 .photos__descriprion {
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 50px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 45px;
   margin-bottom: 45px;
   text-align: center;
 
@@ -154,17 +156,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photos__title {
+  .photos__title-container {
     margin-top: -110px;
     padding-top: 185px;
-    padding-bottom: 145px;
-
-    @include font-param(50px, 56px);
+    padding-bottom: 140px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .photos__title {
+    @include font-param(50px, 58px);
   }
 
   .photos__author-info,
@@ -232,9 +236,8 @@
   }
 
   .photos__descriprion {
-    padding: 0 80px;
-    margin-top: 90px;
-    margin-bottom: 78px;
+    margin-top: 95px;
+    margin-bottom: 75px;
 
     @include font-param(18px, 30px);
   }
@@ -250,12 +253,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photos__title {
-    margin-top: -110px;
+  .photos__title-container {
     padding-top: 180px;
-    padding-bottom: 105px;
+    padding-bottom: 100px;
 
-    @include font-param(50px, 56px);
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
