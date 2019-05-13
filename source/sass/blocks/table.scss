@@ -87,14 +87,23 @@
 }
 
 @media (max-width: 659px) {
-  .table__none,
-  .table__left,
-  .table__center,
-  .table__right {
+  .table {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .table__none {
     display: none;
   }
 
+  .table__left,
+  .table__center,
+  .table__right {
+  }
+
   .table__active {
+    width: 280px;
     display: block;
   }
 }

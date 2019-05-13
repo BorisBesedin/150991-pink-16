@@ -24,6 +24,7 @@
   padding: 0;
   position: relative;
   border: 2px solid #e5e5e5;
+  border-right: none;
 }
 
 @media (max-width: 659px) {
@@ -33,6 +34,7 @@
 
   .price__slider {
     width: 100%;
+    overflow: hidden;
   }
 }
 

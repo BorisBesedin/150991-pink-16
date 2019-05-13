@@ -1,7 +1,11 @@
 .page-footer {
   background-color: #ffffff;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+.page-footer--index {
+  display: none;
 }
 
 .logo-f-desktop {
@@ -56,7 +60,13 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     padding-top: 0;
+    padding-bottom: 5px;
   }
+
+  .page-footer--index {
+    display: block;
+  }
+
 
   .page-footer__wrapper {
     height: 125px;

@@ -71,6 +71,8 @@
 }
 
 .form__contacts legend {
+  width: 260px;
+  margin: 0 auto;
   visibility: hidden;
 }
 
@@ -79,6 +81,7 @@
 }
 
 .form__message textarea {
+  height: 150px;
   resize: none;
   margin-top: 15px;
   padding-top: 15px;

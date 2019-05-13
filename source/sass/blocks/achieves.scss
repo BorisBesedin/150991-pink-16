@@ -59,6 +59,10 @@
   .achieves__item label {
     margin-left: 60px;
   }
+
+  .achieves__group:last-child .achieves__item:last-child {
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
