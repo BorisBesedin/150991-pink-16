@@ -22,7 +22,7 @@
   @include font-param(24px, 30px);
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .table__option {
@@ -97,14 +97,8 @@
     display: none;
   }
 
-  .table__left,
-  .table__center,
-  .table__right {
-  }
-
-  .table__active {
+  .table__content {
     width: 280px;
-    display: block;
   }
 }
 
