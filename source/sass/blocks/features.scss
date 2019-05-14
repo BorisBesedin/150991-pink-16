@@ -27,6 +27,7 @@
 }
 
 .features__description {
+  width: 280px;
   margin-top: 0;
   margin-bottom: 33px;
 
@@ -182,6 +183,7 @@
   }
 
   .features__description {
+    width: 620px;
     margin-bottom: 0;
 
     @include font-param(40px, 48px);
@@ -209,6 +211,7 @@
   }
 
   .features__description {
+    width: 820px;
     margin: 0;
 
     @include font-param(50px, 58px);
@@ -261,7 +264,6 @@
 
   .research__text {
     margin-top: 5px;
-    width: 100%;
     padding-top: 15px;
     padding-bottom: 20px;
     padding-right: 20px;

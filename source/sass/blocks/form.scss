@@ -228,11 +228,11 @@
 
     @include wrapper-set;
     margin-top: 65px;
+  }
 
-    & .achieves {
-      margin-top: 35px;
-      padding-left: 40px;
-    }
+  .form__achieves .achieves {
+    margin-top: 35px;
+    padding-left: 40px;
   }
 
   .form__message {
